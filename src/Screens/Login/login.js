@@ -1,6 +1,7 @@
 import React from 'react'
 import { View, Text, StyleSheet, TextInput } from 'react-native'
 import Button from '../../Components/Button/Button'
+import ProfileImagePicker from '../../Components/ProfileImagePIcker/ProfileImagePicker'
 /**
  * @namespace Login
  * @description the screen that handles user login for the app
@@ -63,6 +64,7 @@ const Login = () => {
     return (
         <View style={styles.container}>
             <Text style={styles.logo}>OnlyHustlers</Text>
+
             <View style={styles.inputView}>
                 <TextInput
                     style={styles.inputText}
@@ -87,6 +89,7 @@ const Login = () => {
                 textStyle={styles.loginText}
             />
             <Button text="Signup" textStyle={styles.loginText} />
+            <ProfileImagePicker />
         </View>
     )
 }
